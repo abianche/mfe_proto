@@ -28,7 +28,11 @@ module.exports = {
       exposes: {
         "./RemoteHeader": "./src/RemoteHeader.jsx",
       },
-      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
+      shared: {
+        react: { singleton: true },
+        "react-dom": { singleton: true },
+        ramda: { singleton: true },
+      },
     }),
   ],
 };

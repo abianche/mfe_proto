@@ -28,7 +28,11 @@ module.exports = {
       exposes: {
         "./RemoteButton": "./src/RemoteButton.jsx",
       },
-      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
+      shared: {
+        react: { singleton: true },
+        "react-dom": { singleton: true },
+        ramda: { singleton: true },
+      },
     }),
   ],
 };
